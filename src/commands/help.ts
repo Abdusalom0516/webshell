@@ -1,30 +1,32 @@
 const helpObj = {
   "commands": [
     [
-    "'about'",
-    "Who made this website?",
+      "'about'",
+      "Bu sayt kim tomonidan yaratilgan?"
     ],
     [
       "'projects'",
-      "Maybe there's something interesting."
+      "Balki qiziqarli narsalar bor."
     ],
     [
       "'whoami'",
-      "A perplexing question."
+      "Juda qiziq savol."
     ],
-    ["'sudo'",
+    [
+      "'sudo'",
       "???"
     ],
     [
       "'repo'",
-      "View the Github Repository."
+      "GitHub repozitoriyasini ko‘rish."
     ],
-    ["'banner'",
-      "Display the banner."
+    [
+      "'banner'",
+      "Bannerni ko‘rsatish."
     ],
     [
       "'clear'",
-      "Clear the terminal."
+      "Terminalni tozalash."
     ]
   ],
 }
@@ -46,9 +48,9 @@ const createHelp = () : string[] => {
   })
 
   help.push("<br>");
-  help.push("Press <span class='keys'>[Tab]</span> for auto completion.");
-  help.push("Press <span class='keys'>[Esc]</span> to clear the input line.");
-  help.push("Press <span class='keys'>[↑][↓]</span> to scroll through your history of commands.");
+  help.push("<span class='keys'>[Tab]</span> tugmasini bosib avtomatik to‘ldirishni ishlating.");
+  help.push("<span class='keys'>[Esc]</span> tugmasini bosib kiritish qatorini tozalang.");
+  help.push("<span class='keys'>[↑][↓]</span> tugmalari yordamida buyruqlar tarixini ko‘rib chiqing.");
   help.push("<br>");
   return help
 }

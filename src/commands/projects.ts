@@ -3,7 +3,7 @@ import command from '../../config.json' assert {type: 'json'};
 const createProject = () : string[] => {
   let string = "";
   const projects : string[] = [];
-  const files = `${command.projects.length} File(s)`;
+  const files = `${command.projects.length} Fayllar(s)`;
   const SPACE = "&nbsp;";
 
   projects.push("<br>")

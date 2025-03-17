@@ -158,24 +158,24 @@ function commandHandler(input : string) {
 
         easterEggStyles();
         setTimeout(() => {
-          writeLines(["What made you think that was a good idea?", "<br>"]);
+          writeLines(["Bu yaxshi g‘oya deb o‘yladingizmi?", "<br>"]);
         }, 200)
 
         setTimeout(() => {
-          writeLines(["Now everything is ruined.", "<br>"]);
+          writeLines(["Endi hammasi barbod bo‘ldi.", "<br>"]);
         }, 1200)
 
         } else if (input === "rm -rf src" && bareMode) {
-          writeLines(["there's no more src folder.", "<br>"])
+          writeLines(["src papkasi allaqachon yo‘q.", "<br>"])
         } else {
           if(bareMode) {
-            writeLines(["What else are you trying to delete?", "<br>"])
+            writeLines(["Yana nimani o‘chirmoqchisiz?", "<br>"])
           } else {
-            writeLines(["<br>", "Directory not found.", "type <span class='command'>'ls'</span> for a list of directories.", "<br>"]);
+            writeLines(["<br>", "Katalog topilmadi.", "Mavjud kataloglarni ko‘rish uchun <span class='command'>'ls'</span> buyrug‘ini kiriting.", "<br>"]);
           }
         } 
       } else {
-        writeLines(["Permission not granted.", "<br>"]);
+        writeLines(["Ruxsat berilmagan.", "<br>"]);
     }
     return
   }
@@ -198,7 +198,7 @@ function commandHandler(input : string) {
       break;
     case 'help':
       if(bareMode) {
-        writeLines(["maybe restarting your browser will fix this.", "<br>"])
+        writeLines(["Balki brauzeringizni qayta yuklasangiz, tuzalar.", "<br>"])
         break;
       }
       writeLines(HELP);
@@ -212,48 +212,48 @@ function commandHandler(input : string) {
       break;
     case 'about':
       if(bareMode) {
-        writeLines(["Nothing to see here.", "<br>"])
+        writeLines(["Bu yerda hech narsa yo‘q.", "<br>"])
         break;
       }
       writeLines(ABOUT);
       break;
     case 'projects':
       if(bareMode) {
-        writeLines(["I don't want you to break the other projects.", "<br>"])
+        writeLines(["Boshqa loyihalarni ham buzishingizni istamayman.", "<br>"])
         break;
       }
       writeLines(PROJECTS);
       break;
     case 'repo':
-      writeLines(["Redirecting to github.com...", "<br>"]);
+      writeLines(["Github sahifasiga yo‘naltirilmoqda...", "<br>"]);
       setTimeout(() => {
         window.open(REPO_LINK, '_blank');
       }, 500);
       break;
     case 'linkedin':
-      //add stuff here
+      // Qo‘shilishi kerak
       break;
     case 'github':
-      //add stuff here
+      // Qo‘shilishi kerak
       break;
     case 'email':
-      //add stuff here
+      // Qo‘shilishi kerak
       break;
     case 'rm -rf':
       if (bareMode) {
-        writeLines(["don't try again.", "<br>"])
+        writeLines(["Yana urinmang.", "<br>"])
         break;
       }
 
       if (isSudo) {
-        writeLines(["Usage: <span class='command'>'rm -rf &lt;dir&gt;'</span>", "<br>"]);
+        writeLines(["Foydalanish: <span class='command'>'rm -rf &lt;papka&gt;'</span>", "<br>"]);
       } else {
-        writeLines(["Permission not granted.", "<br>"])
+        writeLines(["Ruxsat berilmagan.", "<br>"])
       }
         break;
     case 'sudo':
       if(bareMode) {
-        writeLines(["no.", "<br>"])
+        writeLines(["Yo‘q.", "<br>"])
         break;
       }
       if(!PASSWORD) return
@@ -276,12 +276,12 @@ function commandHandler(input : string) {
       if (isSudo) {
         writeLines(["src", "<br>"]);
       } else {
-        writeLines(["Permission not granted.", "<br>"]);
+        writeLines(["Ruxsat berilmagan.", "<br>"]);
       }
       break;
     default:
       if(bareMode) {
-        writeLines(["type 'help'", "<br>"])
+        writeLines(["'help' buyrug‘ini kiriting", "<br>"])
         break;
       }
 

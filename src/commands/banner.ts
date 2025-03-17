@@ -18,9 +18,9 @@ const createBanner = () : string[] => {
     banner.push(eleToPush);
   });  
   banner.push("<br>");
-  banner.push("Welcome to WebShell v1.0.0");
-  banner.push("Type <span class='command'>'help'</span> for a list of all available commands.");
-  banner.push(`Type <span class='command'>'repo'</span> to view the GitHub repository or click <a href='${command.repoLink}' target='_blank'>here</a>.`);
+  banner.push("Qahorov's Shell v1.0.0 ga xush kelibsiz!");
+  banner.push("Barcha mavjud buyruqlar ro‘yxatini ko‘rish uchun <span class='command'>'help'</span> ni kiriting.");
+  banner.push(`GitHub repozitoriyasini ko‘rish uchun <span class='command'>'repo'</span> ni kiriting yoki <a href='${command.repoLink}' target='_blank'>shu yerga</a> bosing.`);
   banner.push("<br>");
   return banner;
 }

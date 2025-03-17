@@ -1,23 +1,25 @@
 {
   "ascii": [
-    "███████╗██╗  ██╗███████╗██╗     ██╗",
-    "██╔════╝██║  ██║██╔════╝██║     ██║",
-    "███████╗███████║█████╗  ██║     ██║",
-    "╚════██║██╔══██║██╔══╝  ██║     ██║",
-    "███████║██║  ██║███████╗███████╗███████╗",
-    "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝"
+"░██████╗░░█████╗░██╗░░██╗░█████╗░██████╗░░█████╗░██╗░░░██╗░░░██╗░░░██╗███████╗",
+"██╔═══██╗██╔══██╗██║░░██║██╔══██╗██╔══██╗██╔══██╗██║░░░██║░░░██║░░░██║╚════██║",
+"██║██╗██║███████║███████║██║░░██║██████╔╝██║░░██║╚██╗░██╔╝░░░██║░░░██║░░███╔═╝",
+"╚██████╔╝██╔══██║██╔══██║██║░░██║██╔══██╗██║░░██║░╚████╔╝░░░░██║░░░██║██╔══╝░░",
+"░╚═██╔═╝░██║░░██║██║░░██║╚█████╔╝██║░░██║╚█████╔╝░░╚██╔╝░░██╗╚██████╔╝███████╗",
+"░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░╚═╝░╚═════╝░╚══════╝"
   ],
-  "title": "WebShell",
-  "username": "visitor",
-  "hostname": "webshell",
+  "title": "qahorov.uz",
+  "username": "mehmon",
+  "hostname": "terminal",
   "password": "050823",
-  "repoLink": "https://github.com/nasan016/webshell",
+  "repoLink": "https://github.com/futzone/webshell",
   "social": {
-    "email": "your@email.com",
-    "github": "yourgithub",
-    "linkedin": "you"
+    "email": "qahhorovzamon@gmail.com",
+    "github": "futzone",
+    "linkedin": "zamon-qahorov-373a53242",
+    "instagram":"qahor0v",
+    "telegram":"qahorovz"
   },
-  "aboutGreeting": "Hi stranger. Welcome to WebShell.",
+  "aboutGreeting": "Salom mehmon! Men tajribali Software Engineer sifatida mobil ilovalar, web-saytlar va Telegram botlar ishlab chiqish bilan shug‘ullanaman. Asosiy yo‘nalishim – mobil dasturlash, ayniqsa Flutter va Dart texnologiyalarida ishlash. Shuningdek, Python orqali backend va avtomatlashtirish yechimlarini yarataman. Ilm-fan rivoji va savob uchun qilinadigan loyihalarga doimo ochiqman. Be’malol murojaat qilishingiz mumkin! 🚀",
   "projects": [
     [
       "GofeR",
@@ -31,26 +33,27 @@
     ]
   ],
   "colors": {
-    "background": "#0C0623",
-    "foreground": "#F8DDE5",
-    "banner": "#FF9951",
-    "border": {
-      "visible": true,
-      "color": "#FFADE2"
-    },
-    "prompt": {
-      "default": "#A5A7A7",
-      "user": "#FE6BC9",
-      "host": "#70FDFF",
-      "input": "#FF7685"
-    },
-    "link": {
-      "text": "#B6AAEE",
-      "highlightColor": "#FFADE2",
-      "highlightText": "#0C0623"
-    },
-    "commands": {
-      "textColor": "#FD9BDB"
-    }
+  "background": "#0A1B0D",
+  "foreground": "#C8E6C9",
+  "banner": "#4CAF50",
+  "border": {
+    "visible": true,
+    "color": "#81C784"
+  },
+  "prompt": {
+    "default": "#A5D6A7",
+    "user": "#66BB6A",
+    "host": "#4CAF50",
+    "input": "#388E3C"
+  },
+  "link": {
+    "text": "#A5D6A7",
+    "highlightColor": "#81C784",
+    "highlightText": "#0A1B0D"
+  },
+  "commands": {
+    "textColor": "#66BB6A"
   }
+}
+
 }

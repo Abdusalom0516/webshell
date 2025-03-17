@@ -1,8 +1,8 @@
 const createDefault = () : string[] => {
   const defaultMsgArr = [
     "<br>",
-    "COMMAND NOT FOUND",
-    "Type <span class='command'>'help'</span> to get started.",
+    "BUYRUQ MAVJUD EMAS",
+    "Boshlash uchun <span class='command'>'help'</span> yuboring",
     "<br>"
   ]  
   
