@@ -18,7 +18,7 @@ const createBanner = () : string[] => {
     banner.push(eleToPush);
   });  
   banner.push("<br>");
-  banner.push("Qahorov's Shell v1.0.0 ga xush kelibsiz!");
+  banner.push("Qahorov's Shell v1.0.1 ga xush kelibsiz!");
   banner.push("Barcha mavjud buyruqlar ro‘yxatini ko‘rish uchun <span class='command'>'help'</span> ni kiriting.");
   banner.push(`GitHub repozitoriyasini ko‘rish uchun <span class='command'>'repo'</span> ni kiriting yoki <a href='${command.repoLink}' target='_blank'>shu yerga</a> bosing.`);
   banner.push("<br>");
