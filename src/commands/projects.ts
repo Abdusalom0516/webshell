@@ -3,7 +3,7 @@ import command from '../../config.json' assert {type: 'json'};
 const createProject = () : string[] => {
   let string = "";
   const projects : string[] = [];
-  const files = `${command.projects.length} Fayllar(s)`;
+  const files = `Bu yerda ${command.projects.length} ta ochiq loyihalarim bor. Qolgan loyiha va ishlarim men ishlagan kompaniyaning shartlari asosida taqdim etilmagan.`;
   const SPACE = "&nbsp;";
 
   projects.push("<br>")
