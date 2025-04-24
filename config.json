@@ -22,14 +22,29 @@
   "aboutGreeting": "Salom mehmon! Men tajribali Software Engineer sifatida mobil ilovalar, web-saytlar va Telegram botlar ishlab chiqish bilan shug‘ullanaman. Asosiy yo‘nalishim – mobil dasturlash, ayniqsa Flutter va Dart texnologiyalarida ishlash. Shuningdek, Python orqali backend va avtomatlashtirish yechimlarini yarataman. Ilm-fan rivoji va savob uchun qilinadigan loyihalarga doimo ochiqman. Be’malol murojaat qilishingiz mumkin! 🚀",
   "projects": [
     [
-      "GofeR",
-      "Vue.js reactivity in Go.",
-      "https://github.com/nasan016/gofer"
+      "Quran App",
+      "Flutter frameworki asosida qilingan mobil ilova",
+      "https://github.com/futzone/learn_quran.git"
     ],
     [
-      "WebShell",
-      "Terminal styled website.",
-      "https://github.com/nasan016/webshell"
+      "Otp Sender",
+      "Bepul OTP xizmatini taqdim etuvchi mobil ilova",
+      "https://github.com/futzone/otp-sender.git"
+    ],
+    [
+      "biznex.uz",
+      "Biznex POS sistemasining websayti",
+      "https://biznex.uz"
+    ],
+    [
+      "deepspace.uz",
+      "Deep Space LLC websayti",
+      "https://deepspace.uz"
+    ],
+    [
+      "nutqify.uz",
+      "O'zbek tili uchun ochiq LLM, NLP, AI hamjamiyat: nutqify.uz",
+      "https://nutqify.uz"
     ]
   ],
   "colors": {
