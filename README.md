@@ -47,7 +47,7 @@ Most of the configuration is done in the `config.json` file.
     "github": "dugfromup",
     "linkedin": "dugthedog"
   },
-  "aboutGreeting": "My name is Dug. I have just met you.",
+  "aboutGreeting": "My name is Abdusalom. I have just met you.",
   "projects": [
     [
       "Project Name",
@@ -70,7 +70,7 @@ Most of the configuration is done in the `config.json` file.
 
 Clone the repository
 ```shell
-git clone https://github.com/nasan016/webshell.git
+git clone https://github.com/Abdusalom0516/webshell.git
 ```
 Go to the project directory
 ```shell
