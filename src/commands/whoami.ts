@@ -1,109 +1,86 @@
 const whoamiObj = {
-  "message" : [
-    [
-      "Borliq mozaikasida,",
-      "men jumboqni savolga tutayotgan aksman - "
-    ],
-    [
-      "Koinotning pichirlashlari orasida,",
-      "o‘zimni anglash labirintida kezaman,",
-      "abadiy ohangni takrorlab - "
-    ],
-    [
-      "Hayot simfoniyasida,",
-      "o‘z ohangini izlayotgan bir notaman,",
-      "olamning savoli bilan hamohang - ",
-    ],
-    [
-      "Yulduz changiday o‘z safarini o‘ylab,",
-      "men koinot jumboqini mulohaza qilaman,",
-      "jimlik bilan so‘rab - ",
-    ],
-    [
-      "Haqiqat to‘qimasida,",
-      "o‘zimni anglash ipiman,",
-      "abadiy savolni o‘rab - "
-    ],
-    [
-      "Dengiz to‘lqinida,",
-      "men qayrilgan aksman,",
-      "qirg‘oqqa urilgan jumboq - "
-    ],
-    [
-      "Vaqt soyasida,",
-      "men o‘tgan va kelajak oralig‘ida qolgan shaklman - "
-    ],
-    [
-      "Tong shafag‘ida,",
-      "men umid va xavotir aralash haroratman - "
-    ],
-    [
-      "Tungi osmonning yulduzi singari,",
-      "men cheksizlik ichida yo‘limni izlayman - "
-    ],
-    [
-      "Shamolning shivirida,",
-      "men yo‘qolgan ovozman,",
-      "uni eshitadigan quloqni kutib - "
-    ],
-    [
-      "Hayot daraxtining barglarida,",
-      "men shivirlagan sirman,",
-      "shamolga hamroh - "
-    ],
-    [
-      "Qor yog‘ayotgan tunda,",
-      "men erib ketayotgan izman,",
-      "undan hech kim bexabar - "
-    ],
-    [
-      "Yomg‘ir tomchilarida,",
-      "men osmonga intilgan umidman,",
-      "yerni quchoqlab - "
-    ],
-    [
-      "Qaynoq qum orasida,",
-      "men yo‘qolayotgan izman,",
-      "qachonlardir qayta topiladigan - "
-    ],
-    [
-      "Qushlarning parvozida,",
-      "men erkinlikka intilgan qanotman - "
-    ],
-    [
-      "Oyning nurlari orasida,",
-      "men jim turgan so‘zman,",
-      "kimdir meni o‘qishini kutib - "
-    ],
-    [
-      "Shahar ko‘chalari orasida,",
-      "men minglab izlardan biriman,",
-      "ammo hech kimniki emas - "
-    ],
-    [
-      "She'r satrlarida,",
-      "men yozilgan, lekin hech qachon o‘qilmagan satrman - "
-    ],
-    [
-      "Dengiz tubidagi marjon singari,",
-      "men hech kim ko‘rmagan sirman - "
-    ],
-    [
-      "Abadiyat yo‘lining changida,",
-      "men kelib ketayotgan izman,",
-      "qachonlardir yo‘q bo‘ladigan - "
-    ],
+ "message": [
+  [
+    "In the quiet of the night,",
+    "I walk under the moon,",
+    "finding peace in every step."
   ],
+  [
+    "In lines of code,",
+    "I build more than apps —",
+    "I build pieces of myself."
+  ],
+  [
+    "Among circuits and wires,",
+    "I search for logic,",
+    "and sometimes, answers."
+  ],
+  [
+    "In the wind on mountain trails,",
+    "I feel free,",
+    "closer to who I really am."
+  ],
+  [
+    "Looking at the stars,",
+    "I don’t just wonder about space,",
+    "I wonder about my place in it."
+  ],
+  [
+    "With a camera in hand,",
+    "I freeze moments,",
+    "hoping to remember how they made me feel."
+  ],
+  [
+    "When the world is loud,",
+    "I find silence in music,",
+    "and meaning in lyrics."
+  ],
+  [
+    "While learning new things,",
+    "I fail, try again, and grow,",
+    "because I love becoming better."
+  ],
+  [
+    "In every late night,",
+    "there’s a little dreamer in me,",
+    "sketching the future silently."
+  ],
+  [
+    "I don’t chase people,",
+    "I chase purpose,",
+    "and sometimes, the moon."
+  ],
+  [
+    "When I see animals,",
+    "I remember how soft life can be,",
+    "and how much I want to protect it."
+  ],
+  [
+    "I don’t talk much,",
+    "but my actions,",
+    "they speak in Flutter widgets and Firebase calls."
+  ],
+  [
+    "In every shadow of doubt,",
+    "there’s a light of curiosity,",
+    "and I follow it."
+  ],
+  [
+    "Even in hard days,",
+    "I remind myself: ",
+    "I’m just a beginner, and that’s beautiful."
+  ]
+],
 }
 
 export const createWhoami = () : string[] => {
-  const whoami : string[] = [];  
+  const whoami : string[] = [];
   const r = Math.floor(Math.random() * whoamiObj.message.length);
   whoami.push("<br>");
 
   whoamiObj.message[r].forEach((ele, idx) => {
     if (idx === whoamiObj.message[r].length - 1) {
-      ele += "<span class='command'>men kimman?</span>";
+      ele += "<span class='command'></span>";
     }
     whoami.push(ele);
   });

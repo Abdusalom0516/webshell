@@ -1,16 +1,16 @@
-const createDefault = () : string[] => {
+const createDefault = (): string[] => {
   const defaultMsgArr = [
     "<br>",
-    "BUYRUQ MAVJUD EMAS",
-    "Boshlash uchun <span class='command'>'help'</span> yuboring",
+    "COMMAND NOT FOUND",
+    "Type <span class='command'>'help'</span> to get started",
     "<br>"
-  ]  
-  
-  const defaultMsg : string[] = [];
-  
+  ];
+
+  const defaultMsg: string[] = [];
+
   defaultMsgArr.forEach((ele) => {
     defaultMsg.push(ele);
-  })
+  });
 
   return defaultMsg;
 }

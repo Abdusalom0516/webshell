@@ -1,11 +1,12 @@
 import command from '../../config.json' assert {type: 'json'};
 
-const createBanner = () : string[] => {
-  const banner : string[] = [];
-  banner.push("<br>")
+const createBanner = (): string[] => {
+  const banner: string[] = [];
+  banner.push("<br>");
+  
   command.ascii.forEach((ele) => {
     let bannerString = "";
-    //this is for the ascii art
+    // This is for the ASCII art
     for (let i = 0; i < ele.length; i++) {
       if (ele[i] === " ") {
         bannerString += "&nbsp;";
@@ -13,15 +14,17 @@ const createBanner = () : string[] => {
         bannerString += ele[i];
       }
     }
-    
+
     let eleToPush = `<pre>${bannerString}</pre>`;
     banner.push(eleToPush);
   });  
+
   banner.push("<br>");
-  banner.push("Abdusalom G'ayratov's Shell v1.0.1 ga xush kelibsiz!");
-  banner.push("Barcha mavjud buyruqlar ro‘yxatini ko‘rish uchun <span class='command'>'help'</span> ni kiriting.");
-  banner.push(`GitHub repozitoriyasini ko‘rish uchun <span class='command'>'repo'</span> ni kiriting yoki <a href='${command.repoLink}' target='_blank'>shu yerga</a> bosing.`);
+  banner.push("Welcome to Abdusalom G'ayratov's Shell v1.0.1!");
+  banner.push("To see a list of all available commands, type <span class='command'>'help'</span>.");
+  banner.push(`To view the GitHub repository, type <span class='command'>'repo'</span> or <a href='${command.repoLink}' target='_blank'>click here</a>.`);
   banner.push("<br>");
+
   return banner;
 }
 

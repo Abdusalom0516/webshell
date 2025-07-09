@@ -1,19 +1,22 @@
 import command from '../../config.json' assert {type: 'json'};
 
-const createProject = () : string[] => {
+const createProject = (): string[] => {
   let string = "";
-  const projects : string[] = [];
-  const files = `Bu yerda ${command.projects.length} ta ochiq loyihalarim bor. Qolgan loyiha va ishlarim men ishlagan kompaniyaning shartlari asosida taqdim etilmagan.`;
+  const projects: string[] = [];
+
+  // Message showing how many public projects there are
+  const files = `There are ${command.projects.length} public projects here. The remaining projects and work are not presented due to company confidentiality agreements.`;
+
   const SPACE = "&nbsp;";
 
-  projects.push("<br>")
+  projects.push("<br>");
 
   command.projects.forEach((ele) => {
-    let link = `<a href="${ele[2]}" target="_blank">${ele[0]}</a>`
-    string += SPACE.repeat(2);
-    string += link;
-    string += SPACE.repeat(17 - ele[0].length);
-    string += ele[1];
+    let link = `<a href="${ele[2]}" target="_blank">${ele[0]}</a>`;
+    string += SPACE.repeat(2); // Add spacing before link
+    string += link; // Add project title as link
+    string += SPACE.repeat(Math.max(0, 25 - ele[0].length)); // Align descriptions
+    string += ele[1]; // Add project description
     projects.push(string);
     string = '';
   });
@@ -21,7 +24,8 @@ const createProject = () : string[] => {
   projects.push("<br>");
   projects.push(files);
   projects.push("<br>");
-  return projects
+
+  return projects;
 }
 
-export const PROJECTS = createProject()
+export const PROJECTS = createProject();

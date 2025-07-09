@@ -2,15 +2,15 @@ const helpObj = {
   "commands": [
     [
       "'about'",
-      "Bu sayt kim tomonidan yaratilgan?"
+      "Who created this website?"
     ],
     [
       "'projects'",
-      "Balki qiziqarli narsalar bor."
+      "Maybe there are some interesting things here."
     ],
     [
       "'whoami'",
-      "Juda qiziq savol."
+      "Very interesting question."
     ],
     [
       "'sudo'",
@@ -18,22 +18,22 @@ const helpObj = {
     ],
     [
       "'repo'",
-      "GitHub repozitoriyasini ko‘rish."
+      "View the GitHub repository."
     ],
     [
       "'banner'",
-      "Bannerni ko‘rsatish."
+      "Display the banner."
     ],
     [
       "'clear'",
-      "Terminalni tozalash."
+      "Clear the terminal."
     ]
   ],
-}
+};
 
-const createHelp = () : string[] => {
-  const help : string[] = []
-  help.push("<br>")
+const createHelp = (): string[] => {
+  const help: string[] = [];
+  help.push("<br>");
 
   helpObj.commands.forEach((ele) => {
     const SPACE = "&nbsp;";
@@ -45,14 +45,14 @@ const createHelp = () : string[] => {
     string += SPACE.repeat(17 - ele[0].length);
     string += ele[1];
     help.push(string);
-  })
+  });
 
   help.push("<br>");
-  help.push("<span class='keys'>[Tab]</span> tugmasini bosib avtomatik to‘ldirishni ishlating.");
-  help.push("<span class='keys'>[Esc]</span> tugmasini bosib kiritish qatorini tozalang.");
-  help.push("<span class='keys'>[↑][↓]</span> tugmalari yordamida buyruqlar tarixini ko‘rib chiqing.");
+  help.push("Press <span class='keys'>[Tab]</span> to autocomplete a command.");
+  help.push("Press <span class='keys'>[Esc]</span> to clear the input line.");
+  help.push("Use <span class='keys'>[↑][↓]</span> to scroll through command history.");
   help.push("<br>");
-  return help
-}
+  return help;
+};
 
 export const HELP = createHelp();
